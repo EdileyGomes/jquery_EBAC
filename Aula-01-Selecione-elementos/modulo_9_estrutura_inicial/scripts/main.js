@@ -1,13 +1,13 @@
-    $(document).ready(function() {
-    $('header button').click(function() {
+$(document).ready(function () {
+    $('header button').click(function () {
         $('form').slideDown()
     })
 
-    $('#botao-cancelar').click(function(){
+    $('#botao-cancelar').click(function () {
         $('form').slideUp()
     })
 
-    $('form').on('submit', function(e) {
+    $('form').on('submit', function (e) {
         console.log('submit')
         e.preventDefault()
     })
