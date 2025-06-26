@@ -1,4 +1,10 @@
 $(document).ready(function () {
-    console.log(document.querySelector('header button'))
-    console.log($('#botao-cancelar'))
+
+    $('header button').click(function() {
+        $('form').slideDown()
+    })
+
+    $('#botao-cancelar').on('click', function() {
+        $('form').slideUp()
+    })
 })
